@@ -33,7 +33,7 @@ class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder
         holder.movieTitle.text = movies[position].title
         Glide
             .with(holder.itemView.context)
-            .load(movies[position].movie_banner)
+            .load(movies[position].image)
             .into(holder.movieImage)
     }
 
