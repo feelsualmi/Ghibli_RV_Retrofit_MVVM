@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 
 class RecyclerViewAdapter(
     private val shortListener: (Movie) -> Unit,
-    //private val longListener: (Movie) -> Boolean,
+    private val longListener: (Movie) -> Unit,
 ) : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
 
     var movies: List<Movie> = emptyList()
@@ -36,7 +36,7 @@ class RecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val shortClickOnImage = movies[position]
-        //val longClickOnImage = movies[position]
+        val longClickOnImage = movies[position]
 
         holder.movieTitle.text = movies[position].title
         Glide
@@ -45,7 +45,7 @@ class RecyclerViewAdapter(
             .into(holder.movieImage)
 
         holder.movieImage.setOnClickListener{shortListener(shortClickOnImage)}
-        //holder.movieImage.setOnLongClickListener{longListener(longClickOnImage)}
+        holder.movieImage.setOnLongClickListener{longListener(longClickOnImage); true}
 
     }
 
