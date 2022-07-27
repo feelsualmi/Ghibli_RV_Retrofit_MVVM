@@ -1,4 +1,4 @@
-package com.example.ghibli_rv_retrofit_mvvm
+package com.example.ghibli_rv_retrofit_mvvm.presentation.description
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

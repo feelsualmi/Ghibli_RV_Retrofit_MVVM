@@ -16,10 +16,10 @@
         android:theme="@style/Theme.Ghibli_RV_Retrofit_MVVM"
         tools:targetApi="31">
         <activity
-            android:name=".DescriptionActivity"
+            android:name=".presentation.description.DescriptionActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.mainscreen.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

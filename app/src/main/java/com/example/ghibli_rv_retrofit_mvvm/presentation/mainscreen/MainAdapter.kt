@@ -1,7 +1,5 @@
-package com.example.ghibli_rv_retrofit_mvvm
+package com.example.ghibli_rv_retrofit_mvvm.presentation.mainscreen
 
-import android.os.Parcel
-import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,11 +7,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.ghibli_rv_retrofit_mvvm.data.Movie
+import com.example.ghibli_rv_retrofit_mvvm.R
 
-class RecyclerViewAdapter(
+class MainAdapter(
     private val shortListener: (Movie) -> Unit,
     private val longListener: (Movie) -> Unit,
-) : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
+) : RecyclerView.Adapter<MainAdapter.MyViewHolder>() {
 
     var movies: List<Movie> = emptyList()
 

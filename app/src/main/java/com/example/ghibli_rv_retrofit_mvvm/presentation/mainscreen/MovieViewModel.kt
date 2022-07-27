@@ -1,8 +1,10 @@
-package com.example.ghibli_rv_retrofit_mvvm
+package com.example.ghibli_rv_retrofit_mvvm.presentation.mainscreen
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.example.ghibli_rv_retrofit_mvvm.data.Movie
+import com.example.ghibli_rv_retrofit_mvvm.data.MovieRepository
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

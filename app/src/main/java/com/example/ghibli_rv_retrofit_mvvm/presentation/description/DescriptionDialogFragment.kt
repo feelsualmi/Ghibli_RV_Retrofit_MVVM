@@ -1,4 +1,4 @@
-package com.example.ghibli_rv_retrofit_mvvm
+package com.example.ghibli_rv_retrofit_mvvm.presentation.description
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import com.bumptech.glide.Glide
 import com.example.ghibli_rv_retrofit_mvvm.databinding.BottomSheetBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class BottomDialogFragment: BottomSheetDialogFragment() {
+class DescriptionDialogFragment: BottomSheetDialogFragment() {
     lateinit var binding: BottomSheetBinding
 
     override fun onCreateView(
@@ -37,8 +37,8 @@ class BottomDialogFragment: BottomSheetDialogFragment() {
         const val ARG_DESCRIPTION = "description"
 
         @JvmStatic
-        fun newInstance(banner: String, title: String, description:String): BottomDialogFragment {
-            val fragment = BottomDialogFragment()
+        fun newInstance(banner: String, title: String, description:String): DescriptionDialogFragment {
+            val fragment = DescriptionDialogFragment()
 
             val bundle = Bundle().apply {
                 putString(ARG_BANNER, banner)

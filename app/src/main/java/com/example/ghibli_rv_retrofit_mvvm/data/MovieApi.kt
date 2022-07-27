@@ -1,4 +1,4 @@
-package com.example.ghibli_rv_retrofit_mvvm
+package com.example.ghibli_rv_retrofit_mvvm.data
 
 import retrofit2.Call
 import retrofit2.Retrofit
